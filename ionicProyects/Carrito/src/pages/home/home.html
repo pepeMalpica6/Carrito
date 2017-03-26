@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Carrito
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToSettingsPage()">
+        <ion-icon name="md-cog"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row class="mostrarDatos">
+      <ion-col width-50>
+        <p>{{ this.temperatura }}</p>
+        <p>{{ this.humedad }}</p>
+        
+      </ion-col>
+      <ion-col width-50>
+        <p>{{ this.luminosidad }}</p>
+        <p>{{ this.distancia }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-25>
+        <button ion-button icon-only (click)="apagarLed()">
+          <ion-icon name="ios-sunny" class="nav-ctl"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-25>
+          <button ion-button icon-only (click)="prenderLed()">
+            <ion-icon name="md-sunny" class="nav-ctl"></ion-icon>
+          </button>
+      </ion-col>
+      <ion-col width-25>
+        <button ion-button icon-only>
+          <ion-icon name="ios-volume-up-outline" class="nav-ctl"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-25>
+        <button ion-button icon-only (click)="getValores()">
+          <ion-icon name="ios-refresh-circle-outline" class="nav-ctl"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+    <!--NEW-->
+    <ion-row>
+      <ion-col width-33>
+
+      </ion-col>
+      <ion-col width-33>
+          <button ion-button icon-only (click)="acelara()">
+          <ion-icon name="md-add-circle" class="nav-ctl"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-33>
+
+      </ion-col>
+    </ion-row>
+    <!--MIDLE-->
+    <ion-row>
+      <ion-col width-33>
+        <button ion-button icon-only (click)="izquierda()">
+          <ion-icon name="ios-arrow-dropleft-circle" class="nav-ctl" ></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-33>
+          <button ion-button color="danger" icon-only (click)="frena()">
+            <ion-icon name="ios-hand" class="nav-ctl"></ion-icon>
+          </button>
+      </ion-col>
+      <ion-col width-33>
+        <button ion-button icon-only (click)="derecha()">
+            <ion-icon name="ios-arrow-dropright-circle" class="nav-ctl"></ion-icon>
+          </button>
+      </ion-col>
+    </ion-row>
+    <!-- FINISH -->
+    <ion-row>
+      <ion-col width-33>
+
+      </ion-col>
+      <ion-col width-33>
+          <button ion-button icon-only (click)="atras()">
+          <ion-icon name="ios-arrow-dropdown" class="nav-ctl"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col width-33>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+  
+
+
+   
+</ion-content>
